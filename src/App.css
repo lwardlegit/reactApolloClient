@@ -1,10 +1,81 @@
 .App {
   text-align: center;
 }
+.container{
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 8%;
+}
+.customerContainerDiv{
+  overflow-y: auto;
+  height: 18em;
+  width: 50%;
+  margin-top: 3em
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.customersContainer{
+  margin: 1em;
+}
+.customersContainer p{
+  display: block;
+
+  
+
+
+}
+.deleteBtn{
+  background-color: #0098DD;
+  color: white;
+  border:none;
+  padding:.5em;
+  border-radius: 5px;
+  margin-left: .5em;
+}
+.deleteBtn:hover{
+  background-color: #002777;
+  cursor: pointer;
+}
+
+.updateBtn{
+  background-color: #0098DD;
+  color: white;
+  border:none;
+  padding:.5em;
+  border-radius: 5px;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+.updateBtn:hover{
+  background-color: #002777;
+  cursor: pointer;
+}
+
+.createCustomerBtn{
+  background-color: #0098DD;
+  margin-left: 1.2em;
+  color:white;
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top:3em;
+}
+.createCustomerBtn:hover{
+  background-color: #002777;
+  cursor:pointer;
+}
+
+.modal{
+  position:absolute;
+  top: 250px;
+  left: 700px;
+  width: 20%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid gray;
+}
+.modal-content{
+  text-align:center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +97,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.form{
+  display: block;
+  background-color:red;
 }
 
 @keyframes App-logo-spin {
